@@ -41,37 +41,79 @@ body.index {
 		    }
 		}
 	}
-	.main-info {
-		cursor: pointer;
-		text-align: center;
-		width: 100vw;
-		padding: 50px 0;
-		.school-name {
-			margin: 30px 0;
-			font-size: 20px;
-		}
-		.logo {
-			width: 100px;
-		}
-		.personal-information {
-			margin-top: 16px;
-			.personal-name {
-				font-size: 20px;
+	.introduction {
+		.main-info {
+			cursor: pointer;
+			text-align: center;
+			width: 100vw;
+			padding: 50px 0;
+			.school-name {
+				margin-top: 24px;
+				font-size: 30px;
 			}
-			.additional-info {
-				font-size: 12px;
-				color: @gray;
+			.school-name-2 {
+				font-size: 16px;
+				margin-bottom: 30px;
+			}
+			.logo {
+				width: 100px;
+			}
+			.secret-button {
+				display: inline-block;
+				padding: 5px 10px;
+				color: @gray-light;
+				font-size: 10px;
+			}
+			.personal-information {
+				margin-top: 30px;
+				.personal-name {
+					font-size: 20px;
+				}
+				.additional-info {
+					font-size: 12px;
+					color: @gray;
+				}
 			}
 		}
 		.about-me {
 			text-align: center;
-			margin: 0 0 50px 0;
 			height: 0px;
 			overflow: hidden;
+			.profile-photo {
+				width: 200px;
+				.border-radius(50%);
+			}
+			.social-media-container {
+				margin-top: 80px;
+				font-size: 16px;
+				text-align: right;
+				a {
+					display: block;
+					color: inherit;
+					&:hover, &:focus {
+						text-decoration: none;
+						color: @blue-light;
+					}
+				}
+			}
 		}
 	}
 	
 	.content {
+		.stop {
+			text-align: center;
+			font-size: 20px;
+			color: @red;
+			margin-bottom: 30px;
+			.stop-header {
+				font-size: 40px;	
+			}
+			a {
+				display: block;
+				font-size: 12px;
+				color: @gray-light;
+			}
+		}
 		.block {
 			cursor: pointer;
 			width: 100%;

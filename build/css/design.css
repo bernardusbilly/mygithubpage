@@ -10,6 +10,10 @@ body {
 .section {
   text-align: center;
 }
+a:hover,
+a:focus {
+  text-decoration: none;
+}
 .circle {
   -webkit-border-top-right-radius: 50%;
   border-top-right-radius: 50%;
@@ -524,34 +528,82 @@ body.index .parallax-container .parallax img {
   bottom: 0;
   width: 100vw;
 }
-body.index .main-info {
+body.index .introduction .main-info {
   cursor: pointer;
   text-align: center;
   width: 100vw;
   padding: 50px 0;
 }
-body.index .main-info .school-name {
-  margin: 30px 0;
-  font-size: 20px;
+body.index .introduction .main-info .school-name {
+  margin-top: 24px;
+  font-size: 30px;
 }
-body.index .main-info .logo {
+body.index .introduction .main-info .school-name-2 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+body.index .introduction .main-info .logo {
   width: 100px;
 }
-body.index .main-info .personal-information {
-  margin-top: 16px;
+body.index .introduction .main-info .secret-button {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #cccccc;
+  font-size: 10px;
 }
-body.index .main-info .personal-information .personal-name {
+body.index .introduction .main-info .personal-information {
+  margin-top: 30px;
+}
+body.index .introduction .main-info .personal-information .personal-name {
   font-size: 20px;
 }
-body.index .main-info .personal-information .additional-info {
+body.index .introduction .main-info .personal-information .additional-info {
   font-size: 12px;
   color: #888888;
 }
-body.index .main-info .about-me {
+body.index .introduction .about-me {
   text-align: center;
-  margin: 0 0 50px 0;
   height: 0px;
   overflow: hidden;
+}
+body.index .introduction .about-me .profile-photo {
+  width: 200px;
+  -webkit-border-top-right-radius: 50%;
+  border-top-right-radius: 50%;
+  -webkit-border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  -webkit-border-top-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-border-bottom-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+body.index .introduction .about-me .social-media-container {
+  margin-top: 80px;
+  font-size: 16px;
+  text-align: right;
+}
+body.index .introduction .about-me .social-media-container a {
+  display: block;
+  color: inherit;
+}
+body.index .introduction .about-me .social-media-container a:hover,
+body.index .introduction .about-me .social-media-container a:focus {
+  text-decoration: none;
+  color: #8888ff;
+}
+body.index .content .stop {
+  text-align: center;
+  font-size: 20px;
+  color: #f82a19;
+  margin-bottom: 30px;
+}
+body.index .content .stop .stop-header {
+  font-size: 40px;
+}
+body.index .content .stop a {
+  display: block;
+  font-size: 12px;
+  color: #cccccc;
 }
 body.index .content .block {
   cursor: pointer;

@@ -14,10 +14,10 @@ $(document).ready(function() {
 
 	$('.main-info').click(function() {
 		if (aboutMe === false) {
-			$('.about-me').css("height", "500px");
+			$('.about-me').animate({height: "500px"}, 500);
 			aboutMe = true;
 		} else {
-			$('.about-me').css("height", "0px");
+			$('.about-me').animate({height: "0px"}, 500);
 			aboutMe = false;
 		}
 	});
