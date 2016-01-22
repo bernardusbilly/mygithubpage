@@ -531,7 +531,6 @@ body.index .parallax-container .parallax img {
 body.index .introduction .main-info {
   cursor: pointer;
   text-align: center;
-  width: 100vw;
   padding: 50px 0;
 }
 body.index .introduction .main-info .school-name {
