@@ -1,0 +1,94 @@
+body.index {
+	font-family: 'Open Sans', sans-serif; 
+
+	.loading {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background-color: @white;
+		text-align: center;
+		.loading-gif {
+			position: absolute;
+			top: 50%;
+			transform: translate3d(-50%, -50%, 0);
+			width: 100px;
+			height: 100px;
+		}
+	}
+
+	.parallax-container {
+		position: relative;
+	    overflow: hidden;
+	    padding: 10px 0 60px 0;
+	    height: 400px;
+	    
+	    z-index: 0;
+	    color: #fff;
+	    .parallax {
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		    z-index: -1;
+
+		    img {
+		    	display: none;
+			    position: absolute;
+			    left: 50%;
+			    bottom: 0;
+			    width: 100vw;
+		    }
+		}
+	}
+	.main-info {
+		cursor: pointer;
+		text-align: center;
+		width: 100vw;
+		padding: 50px 0;
+		.school-name {
+			margin: 30px 0;
+			font-size: 20px;
+		}
+		.logo {
+			width: 100px;
+		}
+		.personal-information {
+			margin-top: 16px;
+			.personal-name {
+				font-size: 20px;
+			}
+			.additional-info {
+				font-size: 12px;
+				color: @gray;
+			}
+		}
+		.about-me {
+			text-align: center;
+			margin: 0 0 50px 0;
+			height: 0px;
+			overflow: hidden;
+		}
+	}
+	
+	.content {
+		.block {
+			cursor: pointer;
+			width: 100%;
+			padding: 100px 20px;
+			background-color: @white;
+			text-align: center;
+			border: 1px solid @gray-light;
+			.smooth();
+
+			&:hover, &:focus {
+				.smooth();
+				background-color: @gray-light;
+				color: @white;
+			}
+		}
+		.frontend {
+
+		}
+	}
+}
