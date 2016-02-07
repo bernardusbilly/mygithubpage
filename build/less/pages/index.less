@@ -78,12 +78,14 @@ body.index {
 			text-align: center;
 			height: 0px;
 			overflow: hidden;
+			background-color: @white-dark;
 			.profile-photo {
+				margin-top: 50px;
 				width: 200px;
 				.border-radius(50%);
 			}
 			.social-media-container {
-				margin-top: 80px;
+				margin-top: 150px;
 				font-size: 16px;
 				text-align: right;
 				a {
@@ -114,6 +116,8 @@ body.index {
 			}
 		}
 		.block {
+			top: 0;
+			left: 0;
 			cursor: pointer;
 			width: 100%;
 			padding: 100px 20px;
@@ -128,7 +132,9 @@ body.index {
 				color: @white;
 			}
 		}
-		.frontend {
+		.content-block {
+			position: absolute;
+			display: none;
 
 		}
 	}

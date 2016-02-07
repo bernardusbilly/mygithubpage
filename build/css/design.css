@@ -564,8 +564,10 @@ body.index .introduction .about-me {
   text-align: center;
   height: 0px;
   overflow: hidden;
+  background-color: #fafafa;
 }
 body.index .introduction .about-me .profile-photo {
+  margin-top: 50px;
   width: 200px;
   -webkit-border-top-right-radius: 50%;
   border-top-right-radius: 50%;
@@ -577,7 +579,7 @@ body.index .introduction .about-me .profile-photo {
   border-bottom-left-radius: 50%;
 }
 body.index .introduction .about-me .social-media-container {
-  margin-top: 80px;
+  margin-top: 150px;
   font-size: 16px;
   text-align: right;
 }
@@ -605,6 +607,8 @@ body.index .content .stop a {
   color: #cccccc;
 }
 body.index .content .block {
+  top: 0;
+  left: 0;
   cursor: pointer;
   width: 100%;
   padding: 100px 20px;
@@ -624,4 +628,8 @@ body.index .content .block:focus {
   transition-duration: 300ms;
   background-color: #cccccc;
   color: #ffffff;
+}
+body.index .content .content-block {
+  position: absolute;
+  display: none;
 }
