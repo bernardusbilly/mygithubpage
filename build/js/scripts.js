@@ -28,7 +28,9 @@ $(document).ready(function() {
 
 	var frontend = false;
 	/*var firstBlockHeight = $('#frontend').css("height");*/
-	var dropFrontEnd = $('#content-frontend').height();
+	/*var dropFrontEnd = $('#content-frontend').height();*/
+	// temporary fix
+	var dropFrontEnd = 2301;
 
 	var activateFrontEnd = function() {
 		frontend = true;
