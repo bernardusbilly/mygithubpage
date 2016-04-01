@@ -27,8 +27,8 @@ a:focus {
 .smooth {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
 }
 .round-xs {
   -webkit-border-radius: 5px;
@@ -622,15 +622,15 @@ body.index .content .block {
   border: 1px solid #cccccc;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
 }
 body.index .content .block:hover,
 body.index .content .block:focus {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
   background-color: #cccccc;
   color: #ffffff;
 }
@@ -689,7 +689,7 @@ body.index .content #content-photography {
   color: #cccccc;
 }
 body.index .content #content-photography .content-text .content-header-vertical {
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 10px;
   font-size: 18px;
   text-align: center;

@@ -9,7 +9,7 @@ var timeOutToggle = function() {
 $(document).ready(function() {
 	
 	$('.parallax').parallax();
-	var timeOut = 250;
+	var timeOut = 400;
 
 	var aboutMe = false;
 
