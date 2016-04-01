@@ -3,6 +3,7 @@ body.index {
 
 	.loading {
 		position: fixed;
+		z-index: 1000;
 		width: 100vw;
 		height: 100vh;
 		background-color: @white;
@@ -101,6 +102,7 @@ body.index {
 	}
 	
 	.content {
+		position: relative;
 		.stop {
 			text-align: center;
 			font-size: 20px;
@@ -116,6 +118,7 @@ body.index {
 			}
 		}
 		.block {
+			display: inline-block;
 			top: 0;
 			left: 0;
 			cursor: pointer;
@@ -131,11 +134,85 @@ body.index {
 				background-color: @gray-light;
 				color: @white;
 			}
-		}
-		.content-block {
-			position: absolute;
-			display: none;
 
+			&.slow-animation {
+				-webkit-transition-duration: 500ms;
+				transition-duration: 500ms;
+			}
+
+			&.block-active {
+				width: 100%;
+				background-color: @gray;
+				border-color: @gray;
+				color: @white;	
+			}
+
+			&.block-photography {
+				background-color: @black;
+				border-color: @black;
+				color: @white;
+			}
 		}
+
+		.content-wrapper {
+			position: relative;
+			z-index: -1;
+			padding-top: 250px;
+			display: none;
+			width: 100vw;
+			margin-bottom: 30px;
+
+			.preview {
+				width: 100%;
+			}
+
+			.row {
+				padding-bottom: 30px;
+				margin-bottom: 30px;
+				border-bottom: 1px solid @gray-light;
+
+				.content-text {
+					.content-header {
+						margin-top: 20px;
+						margin-bottom: 10px;
+						font-size: 18px;
+						text-align: center;
+					}
+					.link {
+						margin-top: 20px;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		#content-frontend {
+			position: absolute;
+			padding-top: 0;
+			margin-top: 30px;
+			top: 222px;
+		}
+		#content-fullstack {
+			padding-top: 500px;
+		}
+		#content-photography {
+			background-color: @black;
+			color: @gray-light;
+			.content-text {
+				.content-header-vertical {
+					margin-top: 150px;
+					margin-bottom: 10px;
+					font-size: 18px;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	footer {
+		display: inline-block;
+		width: 100vw;
+		text-align: center;
+		padding: 20px 0;
 	}
 }
