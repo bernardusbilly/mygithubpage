@@ -651,10 +651,9 @@ body.index .content .block.block-photography {
 }
 body.index .content .content-wrapper {
   position: relative;
-  z-index: -1;
   padding-top: 250px;
   display: none;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 30px;
 }
 body.index .content .content-wrapper .preview {
@@ -664,6 +663,8 @@ body.index .content .content-wrapper .row {
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #cccccc;
+  margin-left: 0;
+  margin-right: 0;
 }
 body.index .content .content-wrapper .row .content-text .content-header {
   margin-top: 20px;
@@ -672,7 +673,7 @@ body.index .content .content-wrapper .row .content-text .content-header {
   text-align: center;
 }
 body.index .content .content-wrapper .row .content-text .link {
-  margin-top: 20px;
+  margin: 10px 0;
   text-align: center;
 }
 body.index .content #content-frontend {
@@ -696,7 +697,7 @@ body.index .content #content-photography .content-text .content-header-vertical 
 }
 body.index footer {
   display: inline-block;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   padding: 20px 0;
 }
