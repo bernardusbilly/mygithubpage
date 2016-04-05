@@ -53,6 +53,7 @@ $(document).ready(function() {
 			$('#frontend').parent().parent().addClass("col-sm-12");
 			$('#backend').parent().parent().addClass("col-sm-offset-3");
 			$('#frontend').parent().parent().removeClass("col-sm-3");
+			$('#frontend').css("width","100%");
 		}, 500);
 		
 		$('#content-frontend').show();
