@@ -185,7 +185,7 @@ $(document).ready(function() {
 		$('#content-fullstack').show();
 		$('#content-fullstack').css("z-index", "-1");
 		$('body').animate({
-			scrollTop: $('#fullstack').offset().top
+			scrollTop: $('#fullstack').offset().top + 221
 		}, "easein");
 		setTimeout(function() {
 			$('#fullstack').css("position", "absolute");
